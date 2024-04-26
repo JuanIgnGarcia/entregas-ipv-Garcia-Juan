@@ -15,3 +15,6 @@ entrega-3-Garcia-juan
 
 entrega-4-Garcia-juan 
  - Desafío_#6
+
+entrega-5-Garcia-juan 
+ - Desafío_#7
