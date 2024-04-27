@@ -1,0 +1,193 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/fonts/Default-Big.tres" type="DynamicFont" id=1]
+[ext_resource path="res://src/screens/OptionsMenu.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.219608, 0.14902, 0.0313726, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.796078, 0.615686, 0.105882, 1 )
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+shadow_size = 3
+
+[node name="OptionsMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.25098 )
+
+[node name="MainPanel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 16.0
+margin_top = 9.0
+margin_right = -66.0
+margin_bottom = -51.0
+custom_styles/panel = SubResource( 13 )
+
+[node name="Label" type="Label" parent="MainPanel"]
+anchor_right = 1.0
+margin_top = 3.0
+margin_bottom = 20.0
+custom_fonts/font = ExtResource( 1 )
+text = "Options"
+align = 1
+valign = 1
+
+[node name="ReturnButton" type="Button" parent="MainPanel"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -35.0
+margin_top = -36.0
+margin_right = 41.0
+margin_bottom = -6.0
+custom_fonts/font = ExtResource( 1 )
+text = "Return"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MainPanel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 6.0
+margin_top = 30.0
+margin_right = -4.0
+margin_bottom = -38.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainPanel/ScrollContainer"]
+margin_right = 199.0
+margin_bottom = 180.0
+
+[node name="PanelContainer" type="PanelContainer" parent="MainPanel/ScrollContainer/VBoxContainer"]
+margin_right = 199.0
+margin_bottom = 42.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 192.0
+margin_bottom = 35.0
+custom_constants/separation = 10
+
+[node name="PanelContainer" type="PanelContainer" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer/HBoxContainer"]
+margin_right = 23.0
+margin_bottom = 28.0
+
+[node name="Intupt" type="Label" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer/HBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 16.0
+margin_bottom = 21.0
+text = "A"
+
+[node name="Action" type="Label" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer/HBoxContainer"]
+margin_left = 33.0
+margin_top = 7.0
+margin_right = 93.0
+margin_bottom = 21.0
+text = "Move left"
+
+[node name="PanelContainer2" type="PanelContainer" parent="MainPanel/ScrollContainer/VBoxContainer"]
+margin_top = 46.0
+margin_right = 199.0
+margin_bottom = 88.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer2"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 192.0
+margin_bottom = 35.0
+custom_constants/separation = 10
+
+[node name="PanelContainer" type="PanelContainer" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer2/HBoxContainer"]
+margin_right = 24.0
+margin_bottom = 28.0
+
+[node name="Intupt" type="Label" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer2/HBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 17.0
+margin_bottom = 21.0
+text = "w"
+
+[node name="Action" type="Label" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer2/HBoxContainer"]
+margin_left = 34.0
+margin_top = 7.0
+margin_right = 66.0
+margin_bottom = 21.0
+text = "Jump"
+
+[node name="PanelContainer3" type="PanelContainer" parent="MainPanel/ScrollContainer/VBoxContainer"]
+margin_top = 92.0
+margin_right = 199.0
+margin_bottom = 134.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer3"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 192.0
+margin_bottom = 35.0
+custom_constants/separation = 10
+
+[node name="PanelContainer" type="PanelContainer" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer3/HBoxContainer"]
+margin_right = 22.0
+margin_bottom = 28.0
+
+[node name="Intupt" type="Label" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer3/HBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 15.0
+margin_bottom = 21.0
+text = "d"
+
+[node name="Action" type="Label" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer3/HBoxContainer"]
+margin_left = 32.0
+margin_top = 7.0
+margin_right = 100.0
+margin_bottom = 21.0
+text = "Move rigth"
+
+[node name="PanelContainer4" type="PanelContainer" parent="MainPanel/ScrollContainer/VBoxContainer"]
+margin_top = 138.0
+margin_right = 199.0
+margin_bottom = 180.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer4"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 192.0
+margin_bottom = 35.0
+custom_constants/separation = 10
+
+[node name="PanelContainer" type="PanelContainer" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer4/HBoxContainer"]
+margin_right = 123.0
+margin_bottom = 28.0
+
+[node name="Intupt" type="Label" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer4/HBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 116.0
+margin_bottom = 21.0
+text = "Mouse right click"
+
+[node name="Action" type="Label" parent="MainPanel/ScrollContainer/VBoxContainer/PanelContainer4/HBoxContainer"]
+margin_left = 133.0
+margin_top = 7.0
+margin_right = 185.0
+margin_bottom = 21.0
+text = "Shoot    "
+
+[connection signal="pressed" from="MainPanel/ReturnButton" to="." method="hide"]
