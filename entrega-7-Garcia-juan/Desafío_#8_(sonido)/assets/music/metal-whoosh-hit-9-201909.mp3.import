@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/metal-whoosh-hit-9-201909.mp3-129acc30332e35063af41bc7e9cf9ab5.mp3str"
+
+[deps]
+
+source_file="res://assets/music/metal-whoosh-hit-9-201909.mp3"
+dest_files=[ "res://.import/metal-whoosh-hit-9-201909.mp3-129acc30332e35063af41bc7e9cf9ab5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/swing-whoosh-weapon-3-189823.mp3-adc69cec5f54e9e7a05fef552f0d584e.mp3str"
+
+[deps]
+
+source_file="res://assets/music/swing-whoosh-weapon-3-189823.mp3"
+dest_files=[ "res://.import/swing-whoosh-weapon-3-189823.mp3-adc69cec5f54e9e7a05fef552f0d584e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
